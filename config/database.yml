@@ -9,7 +9,7 @@ server: &server
 production:
   <<: *server
   adapter: postgresql
-  database: db/mystore
+  database: mystore
   pool: 5
   username: dbatizslicfucw
   password: Xieb3bVumiMnvZXrAbPWU0IBCx
