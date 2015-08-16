@@ -81,12 +81,16 @@
 # On Heroku and other platform providers, you may have a full connection URL
 # available as an environment variable. For example:
 #
-   DATABASE_URL="postgres://adejnhczjyhnjs:yzOCQOgBKy9Bh-iwHPMKCXOxx5@ec2-54-204-20-209.compute-1.amazonaws.com:5432/d260kj47t6dh4h"
+   DATABASE_URL: postgres://adejnhczjyhnjs:yzOCQOgBKy9Bh-iwHPMKCXOxx5@ec2-54-204-20-209.compute-1.amazonaws.com:5432/d260kj47t6dh4h
+   
+   SECRET_KEY_BASE:          072f5e4bb4e043c9260ec2fb2f3ec42fc553f7a31a8038a1dc3e486ac61e0a9d8ee7590544db6d88618ae8f0511d99469829b9ba5f89bc8dff8fcef9d4193514
+
 #
 # You can use this database configuration with:
 #
    production:
      url: <%= ENV['DATABASE_URL'] %>
+     secret_key_base: <%= ENV["SECRET_KEY_BASE"] %>
 
 #production:
  # <<: *default
