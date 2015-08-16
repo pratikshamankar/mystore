@@ -20,52 +20,52 @@
 #pool: 5
 
 #development:
- # <<: *default
-  #database: mystore
-  #username: sugat
-  #password: sugat
-  #adapter: postgresql
-  #encodng: unicode
-  #pool: 5
+# <<: *default
+#database: mystore
+#username: sugat
+#password: sugat
+#adapter: postgresql
+#encodng: unicode
+#pool: 5
 
-  # The specified database role being used to connect to postgres.
-  # To create additional roles in postgres see `$ createuser --help`.
-  # When left blank, postgres will use the default role. This is
-  # the same name as the operating system user that initialized the database.
-  #username: mystore
+# The specified database role being used to connect to postgres.
+# To create additional roles in postgres see `$ createuser --help`.
+# When left blank, postgres will use the default role. This is
+# the same name as the operating system user that initialized the database.
+#username: mystore
 
-  # The password associated with the postgres role (username).
-  #password:
+# The password associated with the postgres role (username).
+#password:
 
-  # Connect on a TCP socket. Omitted by default since the client uses a
-  # domain socket that doesn't need configuration. Windows does not have
-  # domain sockets, so uncomment these lines.
-  #host: localhost
+# Connect on a TCP socket. Omitted by default since the client uses a
+# domain socket that doesn't need configuration. Windows does not have
+# domain sockets, so uncomment these lines.
+#host: localhost
 
-  # The TCP port the server listens on. Defaults to 5432.
-  # If your server runs on a different port number, change accordingly.
-  #port: 5432
+# The TCP port the server listens on. Defaults to 5432.
+# If your server runs on a different port number, change accordingly.
+#port: 5432
 
-  # Schema search path. The server defaults to $user,public
-  #schema_search_path: myapp,sharedapp,public
+# Schema search path. The server defaults to $user,public
+#schema_search_path: myapp,sharedapp,public
 
-  # Minimum log levels, in increasing order:
-  #   debug5, debug4, debug3, debug2, debug1,
-  #   log, notice, warning, error, fatal, and panic
-  # Defaults to warning.
-  #min_messages: notice
+# Minimum log levels, in increasing order:
+#   debug5, debug4, debug3, debug2, debug1,
+#   log, notice, warning, error, fatal, and panic
+# Defaults to warning.
+#min_messages: notice
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 #test:
-  #<<: *default
-  #database: mystore_test
-  #username: sugat
-  #password: sugat
- # adapter: postgresql
- # encodng: unicode
- # pool: 5
+#<<: *default
+#database: mystore_test
+#username: sugat
+#password: sugat
+# adapter: postgresql
+# encodng: unicode
+# pool: 5
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -79,22 +79,22 @@
 # On Heroku and other platform providers, you may have a full connection URL
 # available as an environment variable. For example:
 #
-   DATABASE_URL: postgres://adejnhczjyhnjs:yzOCQOgBKy9Bh-iwHPMKCXOxx5@ec2-54-204-20-209.compute-1.amazonaws.com:5432/d260kj47t6dh4h
-   
-   SECRET_KEY_BASE: 072f5e4bb4e043c9260ec2fb2f3ec42fc553f7a31a8038a1dc3e486ac61e0a9d8ee7590544db6d88618ae8f0511d99469829b9ba5f89bc8dff8fcef9d4193514
+DATABASE_URL: postgres://adejnhczjyhnjs:yzOCQOgBKy9Bh-iwHPMKCXOxx5@ec2-54-204-20-209.compute-1.amazonaws.com:5432/d260kj47t6dh4h
+
+SECRET_KEY_BASE: 072f5e4bb4e043c9260ec2fb2f3ec42fc553f7a31a8038a1dc3e486ac61e0a9d8ee7590544db6d88618ae8f0511d99469829b9ba5f89bc8dff8fcef9d4193514
 
 #
 # You can use this database configuration with:
 #
-   production:
-     url: <%= ENV['DATABASE_URL'] %>
-     secret_key_base: <%= ENV['SECRET_KEY_BASE'] %>
+production:
+url: <%= ENV['DATABASE_URL'] %>
+secret_key_base: <%= ENV['SECRET_KEY_BASE'] %>
 
 #production:
- # <<: *default
- # database: mystore
- # username: sugat
- # password: sugat
- # adapter: postgresql
- # encodng: unicode
+# <<: *default
+# database: mystore
+# username: sugat
+# password: sugat
+# adapter: postgresql
+# encodng: unicode
 #  pool: 5
