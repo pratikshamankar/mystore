@@ -79,9 +79,9 @@
 # On Heroku and other platform providers, you may have a full connection URL
 # available as an environment variable. For example:
 #
-DATABASE_URL: postgres://adejnhczjyhnjs:yzOCQOgBKy9Bh-iwHPMKCXOxx5@ec2-54-204-20-209.compute-1.amazonaws.com:5432/d260kj47t6dh4h
+DATABASE_URL: "postgres://dbatizslicfucw:Xieb3bVumiMnvZXrAbPWU0IBCx@ec2-54-204-27-193.compute-1.amazonaws.com:5432/dfuo701dq06o79"
 
-SECRET_KEY_BASE: 072f5e4bb4e043c9260ec2fb2f3ec42fc553f7a31a8038a1dc3e486ac61e0a9d8ee7590544db6d88618ae8f0511d99469829b9ba5f89bc8dff8fcef9d4193514
+SECRET_KEY_BASE: "c788ab8f57bdec0c52dfad1908bcbf01fc27bcc1544e0cc07d043b082d2eace1e01a29ce55312b63ffc11ca7fcd9c584433e5fc61b2385ace2658f5fed085bd3"
 
 #
 # You can use this database configuration with:
